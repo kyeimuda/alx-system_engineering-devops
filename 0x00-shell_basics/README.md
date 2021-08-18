@@ -15,3 +15,5 @@ ls -n - Display dirctory long format with user and group ID and hidden files
 mkdir - creates directory
 
 mv - move files and directories
+
+rm - delete file
