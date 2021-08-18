@@ -6,4 +6,4 @@ cd - change directory
 
 ls -l - display content in long format
 
-la -la .. - list all files including files
+ls -la .. - list all files including hidden files
