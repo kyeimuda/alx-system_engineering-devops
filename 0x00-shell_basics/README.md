@@ -11,3 +11,5 @@ ls -l - display content in long format
 ls -la .. - list all files including hidden files
 
 ls -n - Display dirctory long format with user and group ID and hidden files
+
+mkdir - creates directory 
