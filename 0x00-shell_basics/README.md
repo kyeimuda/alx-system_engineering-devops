@@ -17,3 +17,5 @@ mkdir - creates directory
 mv - move files and directories
 
 rm - delete file
+
+rmdir - delete directory
