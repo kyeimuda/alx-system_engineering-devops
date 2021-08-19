@@ -1,1 +1,1 @@
-chown  - change file ownership
+su - change user
