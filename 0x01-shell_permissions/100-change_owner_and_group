@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -R vincent:staff /root/alx-system_engineering-devops/0x01-change_owner_and_group
+chown -R vincent:staff /root
