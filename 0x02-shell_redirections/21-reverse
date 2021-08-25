@@ -1,2 +1,2 @@
 #!/bin/bash
-echo Reserse | rev < reverse
+rev | echo Reverse
