@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script to configure web-02 to be identical to web-01
+# Script to configure web-02 server to be identical to web-01 server
 apt-get -y update
 apt-get -y install nginx
 sudo chmod 777 /var/www/html -R
