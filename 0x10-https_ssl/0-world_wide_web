@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#This bash script displays a subdomain its record type and destination
+
+functionPrint()
+{
+    echo -n "The subdomain $2"
+    dig $2.$1 | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{ print " is a " $4 " record and points to " $5 }'
+}
+if [ $# -eq 1 ]
+then
+    for data in www lb-01 web-01 web-02
+    do
+     functionPrint $1 $data
+    done
+else
+    functionPrint $1 $2
+fi
