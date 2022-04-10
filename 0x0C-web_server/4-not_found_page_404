@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Install nginx web server
-sudo apt-get -y update
-sudo apt-get -y install nginx
-sudo chmod 777 /var/www/html -R
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-command="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.google.com\/?sa=X&ved=0ahUKEwiM8NGV8sn2AhUC3hoKHRwjBMQQOwgC permanent;"
+#Redirect one web url to another
+apt-get -y update
+apt-get -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
+command="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com permanent;"
 error="\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\troot \/usr\/share\/nginx\/html;\n\tinternal;}"
 sed -i "s/server_name _;/$command$error/" /etc/nginx/sites-available/default
-sudo service nginx start
+service nginx start
