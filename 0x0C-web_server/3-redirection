@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 #Redirect one web url to another
 apt-get -y update
 apt-get -y install nginx
